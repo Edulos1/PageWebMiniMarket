@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../CSS/Styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div><img src="../Recursos/Logo/logominimarket (1).webp" class="logo"></div>
+
+    <nav>
+        <a href="../HTML/index.html">Inicio</a>
+        <a href="../HTML/categorias.html">Categorías</a>
+        <a href="../HTML/ofertas.html">Ofertas</a>
+        <a href="../HTML/contacto.html">Contacto</a>
+    </nav>
+
+    <div class="carrito">
+        🛒 <span id="contador">0</span>
+        <a href="../HTML/pago.html"><button>Pagar</button></a>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>¡OFERTAS DE LA SEMANA!</h2>
+    <p>Hasta el 25% de descuento</p>
+    <a href="ofertas.html"><button>VER AHORA</button></a>
+</section>
+
+<h2 class="titulo">Productos destacados</h2>
+<div id="productos-destacados" class="productos"></div>
+
+<h2 class="titulo">Categorías principales</h2>
+
+<div class="categorias-home">
+    <a href="productos.html?cat=lacteos">
+        <img src="../Recursos/Imagenes/Categorias/LACTEOS.webp" class="categorias_img">Lácteos</a>
+    <a href="productos.html?cat=frutas">
+        <img src="../Recursos/Imagenes/Categorias/FRUTAS Y VERDURAS.webp" class="categorias_img">Frutas</a>
+    <a href="productos.html?cat=panaderia">
+        <img src="../Recursos/Imagenes/Categorias/PANADERÍA.webp" class="categorias_img">Panadería</a>
+    <a href="productos.html?cat=aseo">
+        <img src="../Recursos/Imagenes/Categorias/ASEO.webp" class="categorias_img">Aseo</a>
+</div>
+
+<script src="../JAVASCRIPT/productos.js"></script>
+<script src="../JAVASCRIPT/Script.js"></script>
+</body>
+
+<footer>
+    <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Dirección</p>
+        <p>Teléfono</p>
+    </div>
+
+    <div class="footer-section divider">
+        <h3>Información</h3>
+        <p>Términos</p>
+        <p>Políticas</p>
+    </div>
+
+    <div class="footer-section divider">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+            <!-- Puedes usar texto o imágenes locales -->
+            <span><img src="../Recursos/Logo/logo facebook-convertido-de-png.webp" class="icon"></span>
+            <span><img src="../Recursos/Logo/logo_instagram.webp" class="icon"></span>
+        </div>
+    </div>
+</footer>
+
+</html>

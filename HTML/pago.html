@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../CSS/Styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+ <header class="navbar">
+    <div><img src="../Recursos/Logo/logominimarket (1).webp" class="logo"></div>
+
+    <nav>
+        <a href="../HTML/index.html">Inicio</a>
+        <a href="../HTML/categorias.html">Categorías</a>
+        <a href="../HTML/ofertas.html">Ofertas</a>
+        <a href="../HTML/contacto.html">Contacto</a>
+        <a href="../HTML/productos.html">productos</a>
+    </nav>
+
+    <div class="carrito">
+        🛒 <span id="contador">0</span>
+        <a href="../HTML/pago.html"><button>Pagar</button></a>
+    </div>
+</header>
+
+<h1>Finalizar compra</h1>
+
+<h2>Resumen de compra</h2>
+
+<div id="resumen-carrito"></div>
+
+<div class="acciones-carrito">
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    <button onclick="cancelarCompra()">Cancelar compra</button>
+</div>
+
+<form onsubmit="pagar(event)">
+    <input placeholder="Nombre" required>
+    <input placeholder="Dirección" required>
+    <input placeholder="Celular" required>
+    <input placeholder="Correo" required>
+    <button>Confirmar pago</button>
+</form>
+
+<script src="../JAVASCRIPT/Script.js"></script>
+</body>
+</html>
